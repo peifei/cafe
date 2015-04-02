@@ -23,11 +23,32 @@ body{
     .column-title{
         font-size: 20px;
     }
+    #xytn .my-brand img{
+        padding-left: 20px;
+        width: 70px;
+    }
 }
 
+@media (min-width: 768px) and(max-width:992px ){
+    #xytn .my-brand img{
+        padding-left: 30px;
+        width: 90px;
+    }
+}
 
+@media(min-width: 992px) and (max-width: 1200px){
+    #xytn .my-brand img{
+        padding-left: 40px;
+        width: 120px;
+    }
+}
 
-
+@media(min-width: 1200px){
+    #xytn .my-brand img{
+        padding-left: 50px;
+        width: 170px;
+    }
+}
 
 
 .column-title span{height: 50px; line-height: 50px}
@@ -56,3 +77,4 @@ body{
     background-color: transparent;
     border:0;
 }
+

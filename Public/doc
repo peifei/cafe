@@ -1,0 +1,45 @@
+-- phpMyAdmin SQL Dump
+-- version 3.3.3
+-- http://www.phpmyadmin.net
+--
+-- 主机: localhost
+-- 生成日期: 2015 年 04 月 02 日 15:33
+-- 服务器版本: 5.1.50
+-- PHP 版本: 5.3.14
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- 数据库: `cafe`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `category`
+--
+
+CREATE TABLE IF NOT EXISTS `category` (
+  `id` smallint(4) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL,
+  `mark` varchar(20) NOT NULL,
+  `status` tinyint(2) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `item`
+--
+
+CREATE TABLE IF NOT EXISTS `item` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `cid` smallint(4) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `price` float(9,2) NOT NULL,
+  `pic` varchar(500) NOT NULL,
+  `desc` text NOT NULL,
+  `status` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
