@@ -1,0 +1,22 @@
+<h3 class="page-header">分类列表<span class="pull-right"><a href="__SITE_BASE_URL__dday/category/add" class="btn btn-primary btn-sm">添加新分类</a> </span></h3>
+<table class="table table-responsive table-striped">
+    <tr>
+        <th>分类编号</th>
+        <th>分类名称</th>
+        <th>分类字母标识</th>
+        <th>分类状态</th>
+        <th>操作</th>
+    </tr>
+    <foreach name="categoryList" item="category" >
+        <tr>
+            <th>{$category.id}</th>
+            <th>{$category.name}</th>
+            <th>{$category.mark}</th>
+            <th>
+                {:W('Common/Cate/statusConverter',array($category['status']))}
+            </th>
+            <th><a href="__SITE_BASE_URL__dday/category/delete?id={$category.id}" class="btn btn-primary btn-xs">删除</a>&nbsp;&nbsp;
+                <a href="__SITE_BASE_URL__dday/category/edit?id={$category.id}" class="btn btn-primary btn-xs">修改</a> </th>
+        </tr>
+    </foreach>
+</table>

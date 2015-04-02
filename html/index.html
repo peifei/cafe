@@ -17,96 +17,119 @@
     <![endif]-->
 </head>
 <body>
-<style type="text/css">
-    #nav-container .navbar-default{
-        background: url("../images/decorator/cafe_bg.jpg") repeat;
-        border-color: #53351b;
-        border-radius:0px;
-        margin-bottom:0px;
-    }
-    #nav-container .navbar-default .navbar-nav > li > a {
-        color: #ffffff;
-    }
-    #nav-container .navbar-default .navbar-nav > li > a:hover,
-    #nav-container .navbar-default .navbar-nav > li > a:focus {
-        color: #cccccc;
-    }
 
-    #nav-container .navbar-default .navbar-nav > .active > a,
-    #nav-container .navbar-default .navbar-nav > .active > a:hover,
-    #nav-container .navbar-default .navbar-nav > .active > a:focus {
-        color: #8a6d3b;
-        background-color: #c0a16b;
-    }
-
-</style>
 <div class="container">
-    <div id="title" style="text-align: center">
-        <img src="../images/decorator/title_1140_200.jpg" class="img-responsive"/>
-    </div>
-    <div id="nav-container">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+    <div id="header" style="position: relative">
+        <div style="position: absolute;width: 100%" id="xytn">
+            <nav class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></span>
+                        <a class="navbar-brand" href="#">Project name</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">咖啡</a></li>
-                        <li><a href="#">简餐</a></li>
-                        <li><a href="#">零食</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div><!--/.container-fluid -->
-        </nav>
-    </div>
+            </nav>
 
-    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-        <!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- Carousel items -->
-        <div class="carousel-inner">
-            <div class="active item">
-                <img src="../images/decorator/slider1.jpg"/>
-                <div class="carousel-caption">
-                    <h3>First slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
+        </div>
+        <img src="../images/decorator/head_bg.jpg" class="img-responsive"/>
+
+    </div>
+    <div id="content">
+        <div class="column">
+            <div class="column-title clearfix">
+            <span class="col-lg-3 col-md-3 col-sm-3 col-xs-4"><img src="../images/decorator/left.png" class="img-responsive"/></span>
+            <span class="col-lg-1 col-md-2 col-sm-2 col-xs-3" style="text-align: center">咖啡</span>
+            <span class="col-lg-3 col-md-3 col-sm-3 col-xs-4"><img src="../images/decorator/right.png" class="img-responsive"/></span>
             </div>
-            <div class="item">
-                <img src="../images/decorator/slider2.jpg"/>
-                <div class="carousel-caption">
-                    <h3>Second slide label</h3>
-                    <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-                </div>
+            <div class="row" style="padding: 0 20px">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a class="imglink" href="#">
+                            <img src="../images/items/cafe1.jpg" class="img-thumbnail img-responsive"/>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a class="imglink" href="#">
+                            <img src="../images/items/cafe2.jpg" class="img-thumbnail img-responsive"/>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a class="imglink" href="#">
+                            <img src="../images/items/cafe3.jpg" class="img-thumbnail img-responsive"/>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a class="imglink" href="#">
+                            <img src="../images/items/cafe4.jpg" class="img-thumbnail img-responsive"/>
+                        </a>
+                    </div>
             </div>
-            <div class="item">
-                <img src="../images/decorator/slider3.jpg"/>
-                <div class="carousel-caption">
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+        <div class="column">
+            <div class="column-title clearfix">
+                <span class="col-lg-3 col-md-3 col-sm-3 col-xs-4"><img src="../images/decorator/left.png" class="img-responsive"/></span>
+                <span class="col-lg-1 col-md-2 col-sm-2 col-xs-3" style="text-align: center">简餐</span>
+                <span class="col-lg-3 col-md-3 col-sm-3 col-xs-4"><img src="../images/decorator/right.png" class="img-responsive"/></span>
+            </div>
+            <div class="row" style="padding: 0 20px">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <a class="imglink" href="#">
+                        <img src="../images/items/jc1.jpg" class="img-thumbnail img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <a class="imglink" href="#">
+                        <img src="../images/items/jc2.jpg" class="img-thumbnail img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <a class="imglink" href="#">
+                        <img src="../images/items/jc3.jpg" class="img-thumbnail img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <a class="imglink" href="#">
+                        <img src="../images/items/jc4.jpg" class="img-thumbnail img-responsive"/>
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- Carousel nav -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
     </div>
+    <div id="footer">
+        <div class="clearfix brown_line"></div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="footer_info">
+                <h4>西亚.唐尼 咖啡</h4>
+                <p>地址：这里是地址这里是地址这里是地址这里是地址</p>
+                <p>电话：1232131232313</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
 
-
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -1,0 +1,26 @@
+<h3 class="page-header">产品列表<span class="pull-right"><a href="__SITE_BASE_URL__dday/item/add" class="btn btn-primary btn-sm">添加新产品</a> </span></h3>
+<table class="table table-responsive table-striped">
+    <tr>
+        <th>编号</th>
+        <th>名称</th>
+        <th>价格</th>
+        <th>所属分类</th>
+        <th>状态</th>
+        <th>图片</th>
+        <th>操作</th>
+    </tr>
+    <foreach name="itemList" item="item" >
+        <tr>
+            <th>{$item.id}</th>
+            <th>{$item.name}</th>
+            <th>{$item.price}</th>
+            <th>{:W('Common/Cate/cateNameConverter',array($item['cid']))}</th>
+            <th>{:W('Common/Item/statusConverter',array($item['status']))}</th>
+            <th><img src="__SITE_BASE_URL__/Public/{$item.pic}" /></th>
+            <th><a href="__SITE_BASE_URL__dday/item/delete?id={$item.id}" class="btn btn-primary btn-xs">删除</a>&nbsp;&nbsp;
+                <a href="__SITE_BASE_URL__dday/item/edit?id={$item.id}" class="btn btn-primary btn-xs">修改</a>&nbsp;&nbsp;
+                <a href="__SITE_BASE_URL__dday/item/edit?id={$item.id}" class="btn btn-primary btn-xs">查看页面</a>
+            </th>
+        </tr>
+    </foreach>
+</table>

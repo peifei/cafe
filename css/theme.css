@@ -3,4 +3,56 @@ body{
     background: url("../images/decorator/body_bg.jpg") repeat;
 }
 
+#content,#footer{
+    background:url("../images/decorator/content_bg.jpg") repeat-y;
+}
 
+.column-title{
+    /*width: 729px;
+    height: 50px;
+    line-height: 50px;
+    */
+    font-size: 30px;
+    font-weight: bold;
+    color:#843534;
+    vert-align:middle;
+
+}
+
+@media (max-width: 768px) {
+    .column-title{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+.column-title span{height: 50px; line-height: 50px}
+.column-title span img{display: inline}
+
+.imglink{
+    padding: 10px;
+    display: block;
+}
+
+#footer{
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.brown_line{
+    border: solid 1px #843534;
+}
+.footer_info{
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+
+#xytn .navbar-default{
+    background-color: transparent;
+    border:0;
+}

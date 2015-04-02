@@ -1,0 +1,24 @@
+[ 2015-04-01T09:41:20+08:00 ] 127.0.0.1 /cafe/dday/item/add
+ERR: Think\Model:getStatus方法不存在！
+
+[ 2015-04-01T09:41:46+08:00 ] 127.0.0.1 /cafe/dday/item/add
+ERR: Think\Model:getCategory方法不存在！
+
+[ 2015-04-01T09:42:25+08:00 ] 127.0.0.1 /cafe/dday/item/add
+ERR: Think\Model:getCategory方法不存在！
+
+[ 2015-04-01T14:12:38+08:00 ] 127.0.0.1 /cafe/dday/item/
+ERR: Think\Controller:cateNameConverter方法不存在！
+
+[ 2015-04-01T14:42:27+08:00 ] 127.0.0.1 /cafe/dday/item/delete?id=1
+ERR: Think\Model:deleteCategory方法不存在！
+
+[ 2015-04-01T15:35:11+08:00 ] 127.0.0.1 /cafe/dday/item/$pic
+ERR: 非法操作:$pic
+
+[ 2015-04-01T15:35:12+08:00 ] 127.0.0.1 /cafe/dday/item/$pic
+ERR: 非法操作:$pic
+
+[ 2015-04-01T17:04:11+08:00 ] 127.0.0.1 /cafe/dday/item/edit?id=4
+ERR: Think\Model:editCategory方法不存在！
+
