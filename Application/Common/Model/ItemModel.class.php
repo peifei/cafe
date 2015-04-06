@@ -37,5 +37,11 @@ class ItemModel extends Model  {
         $this->where(array('id'=>$data['id']))->save($data);
     }
 
-    //public function
+    public function getItemsByCatIdAndStatus($catId,$status=null){
+        if(is_null($status)){
+            return $this->select();
+        }else{
+            return $this->where(array('cid'=>$catId,'status'=>$status))->select();
+        }
+    }
 }

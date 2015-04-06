@@ -23,29 +23,27 @@ body{
     .column-title{
         font-size: 20px;
     }
-    #xytn .my-brand img{
-        padding-left: 20px;
-        width: 70px;
-    }
+
 }
 
-@media (min-width: 768px) and(max-width:992px ){
-    #xytn .my-brand img{
-        padding-left: 30px;
-        width: 90px;
+@media(min-width: 768px) and (max-width:992px){
+    #xytn .navbar-nav li{
+        margin: 0 10px;
+    }
+    #xytn .navbar-header{
+        width: 250px;
     }
 }
 
 @media(min-width: 992px) and (max-width: 1200px){
-    #xytn .my-brand img{
-        padding-left: 40px;
-        width: 120px;
+    #xytn .navbar-nav li{
+        margin: 0 20px;
     }
 }
 
 @media(min-width: 1200px){
-    #xytn .my-brand{
-        padding-left: 50px;
+    #xytn .navbar-nav li{
+        margin: 0 30px;
     }
 }
 
@@ -77,9 +75,7 @@ body{
     border:0;
 }
 
-#xytn .navbar-nav li{
-    margin-right: 10px;
-}
+
 
 #xytn .navbar-nav li a{
     width: 120px;

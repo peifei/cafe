@@ -2,7 +2,7 @@
 <script type="text/javascript" charset="utf-8" src="/cafe/Public/um/umeditor.config.js"></script>
 <script type="text/javascript" charset="utf-8" src="/cafe/Public/um/umeditor.min.js"></script>
 <script type="text/javascript" src="/cafe/Public/um/lang/zh-cn/zh-cn.js"></script>
-<form action="/cafe/dday/item/edit?id=4" method="post" id="item_form" enctype="multipart/form-data">
+<form action="/cafe/dday/item/add" method="post" id="item_form" enctype="multipart/form-data">
     <div class="form-group">
         <label for="name">请输入产品名</label>
         <input type="text" id="name" name="name" class="form-control" placeholer="产品名"<?php echo isset($name)?'value="'.$name.'"':'' ?> />

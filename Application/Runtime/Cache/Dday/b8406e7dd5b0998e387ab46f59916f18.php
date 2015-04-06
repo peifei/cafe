@@ -44,7 +44,7 @@
 
 
 <?php echo W('Common/Common/showNoticeMessage',array('success','this is message'));?>
-<h3 class="page-header">添加新分类</h3>
+<h3 class="page-header">修改分类</h3>
 <div class="col-lg-1 col-md-1 "></div>
 <div class="col-lg-10 col-md-10 ">
     <div class="jumbotron">

@@ -1,12 +1,12 @@
-<?php if (!defined('THINK_PATH')) exit();?><form action="/cafe/dday/category/add" method="post">
+<?php if (!defined('THINK_PATH')) exit();?><form action="/cafe/dday/category/edit?id=1" method="post">
     <div class="form-group">
         <label for="name">请输入分类名</label>
-        <input type="text" id="name" name="name" class="form-control" placeholer="分类名"<?php echo $name?'value="'.$name.'"':'' ?> />
+        <input type="text" id="name" name="name" class="form-control" placeholer="分类名"<?php echo isset($name)?'value="'.$name.'"':'' ?> />
     </div>
 
     <div class="form-group">
         <label for="mark">请输入分类字母标识（此标识在url中出现，请使用有意义的英文或拼音）</label>
-        <input type="text" id="mark" name="mark" class="form-control" placeholer="分类字母标识" <?php echo $mark?'value="'.$mark.'"':'' ?> />
+        <input type="text" id="mark" name="mark" class="form-control" placeholer="分类字母标识" <?php echo isset($mark)?'value="'.$mark.'"':'' ?> />
     </div>
     <div class="radio">
         <fieldset>

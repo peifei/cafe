@@ -43,7 +43,13 @@ class CateWidget extends Controller {
         $this->display('Category:radio');
     }
 
-    public function testAb($var1,$var2){
-        echo 'bbbbbbbbb'.$var1;
+    public function showNavCat(){
+        $catDb=new CategoryModel();
+        $cats=$catDb->getCategory(CategoryModel::STATUS_MAINPAGE_SHOW);
+        $html='';
+        foreach($cats as $cat){
+            $html.='<li><a href="#">'.$cat['name'].'</a></li>';
+        }
+        echo $html;
     }
 } 

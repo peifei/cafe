@@ -14,7 +14,7 @@ class CategoryController extends Controller {
 
     public function add(){
         if(IS_POST){
-            $cat=D('Category');
+            $cat=new CategoryModel();
             $cat->addNewCategory(I('post.'));
             //$this->redirect(SITE_BASE_URL.'Dday/Category',null,0);
             //redirect(SITE_BASE_URL.'Dday/Category');
@@ -36,7 +36,7 @@ class CategoryController extends Controller {
 
     public function edit(){
         $id=I('get.id');
-        $cat=D('Category');
+        $cat=new CategoryModel();
         if(IS_POST){
             $data=I('post.');
             $data['id']=$id;

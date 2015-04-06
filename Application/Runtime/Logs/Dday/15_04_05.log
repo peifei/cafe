@@ -1,0 +1,9 @@
+[ 2015-04-05T14:48:13+08:00 ] 127.0.0.1 /cafe/dday/add
+ERR: 无法加载控制器:Add
+
+[ 2015-04-05T14:48:51+08:00 ] 127.0.0.1 /cafe/dday/category/add
+ERR: Think\Model:addNewCategory方法不存在！
+
+[ 2015-04-05T15:26:00+08:00 ] 127.0.0.1 /cafe/dday/category/edit?id=1
+ERR: Think\Model:editCategory方法不存在！
+

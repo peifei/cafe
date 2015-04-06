@@ -43,8 +43,8 @@
     <div class="container">
 
 
+<?php echo W('Common/Common/showNoticeMessage',array('success','this is message'));?>
 
         </div><!--container-->
-
     </body>
 </html>

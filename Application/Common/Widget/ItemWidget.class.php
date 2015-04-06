@@ -45,7 +45,17 @@ class ItemWidget extends Controller {
         $this->display('Category:radio');
     }
 
-    public function testAb($var1,$var2){
-        echo 'bbbbbbbbb'.$var1;
+    public function showItems($cid){
+        $itemDb=new ItemModel();
+        $items=$itemDb->getItemsByCatIdAndStatus($cid,ItemModel::STATUS_MAINPAGE_SHOW);
+        $html='';
+        foreach($items as $item){
+            $html.='<div class="col-md-3 col-sm-6 col-xs-12">
+                <a class="imglink" href="#">
+                    <img src="'.SITE_BASE_URL.'public/'.$item['pic'].'" class="img-thumbnail img-responsive"/>
+                </a>
+            </div>';
+        }
+        echo $html;
     }
 } 
