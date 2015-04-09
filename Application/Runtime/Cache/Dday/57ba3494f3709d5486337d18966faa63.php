@@ -30,12 +30,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">主页</a>
+                <a class="navbar-brand" href="http://127.0.0.1/cafe/dday">西娅.唐尼-后台</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a href="#">类别管理</a></li>
-                    <li><a href="#">商品管理</a></li>
+                    <li><a href="http://127.0.0.1/cafe/dday/category">类别管理</a></li>
+                    <li><a href="http://127.0.0.1/cafe/dday/item">商品管理</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://127.0.0.1/cafe/dday/logout">退出</a></li>
                 </ul>
             </div>
         </div>
@@ -43,7 +46,7 @@
     <div class="container">
 
 
-<?php echo W('Common/Common/showNoticeMessage',array('success','this is message'));?>
+<!--<?php echo W('Common/Common/showNoticeMessage',array('success','this is message'));?>-->
 <h3 class="page-header">添加新分类</h3>
 <div class="col-lg-1 col-md-1 "></div>
 <div class="col-lg-10 col-md-10 ">

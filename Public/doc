@@ -43,3 +43,22 @@ CREATE TABLE IF NOT EXISTS `item` (
   `status` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `admin_login`
+--
+CREATE TABLE IF NOT EXISTS `admin_login` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL,
+  `pwd` varchar(50) NOT NULL,
+  `salt` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- 转存表中的数据 `admin_login`
+--
+
+INSERT INTO `admin_login` (`id`, `name`, `pwd`, `salt`) VALUES
+(1, 'pei', '006c37354b7270964a29f4bcf83bcea4', 'O0N13TWoyVr0CAA');

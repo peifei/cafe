@@ -2,9 +2,9 @@
     <foreach name="cates" item="cate">
         <div class="column">
             <div class="column-title clearfix">
-                <span class="col-lg-3 col-md-3 col-sm-3 col-xs-4"><img src="./public/images/decorator/left.png" class="img-responsive"/></span>
+                <span class="col-lg-3 col-md-3 col-sm-3 col-xs-4"><img src="__PUBLIC__/images/decorator/left.png" class="img-responsive"/></span>
                 <span class="col-lg-1 col-md-2 col-sm-2 col-xs-3" style="text-align: center">{$cate.name}</span>
-                <span class="col-lg-3 col-md-3 col-sm-3 col-xs-4"><img src="./public/images/decorator/right.png" class="img-responsive"/></span>
+                <span class="col-lg-3 col-md-3 col-sm-3 col-xs-4"><img src="__PUBLIC__/images/decorator/right.png" class="img-responsive"/></span>
             </div>
             <div class="row" style="padding: 0 20px">
                 {:W('Common/Item/showItems',array($cate['id']))}

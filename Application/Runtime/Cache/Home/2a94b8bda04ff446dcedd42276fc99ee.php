@@ -36,7 +36,7 @@
                         </button>
                         <div class="col-lg-11 col-md-10 col-sm-10 col-xs-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
                             <a class="my-brand1" href="http://127.0.0.1/cafe/">
-                                <img src="./public/images/decorator/logo_with_shadow.png" class="img-responsive"/>
+                                <img src="/cafe/Public/images/decorator/logo_with_shadow.png" class="img-responsive"/>
                             </a>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
 
         </div>
 
-        <img src="./public/images/decorator/head_bg_2.jpg" class="img-responsive"/>
+        <img src="/cafe/Public/images/decorator/head_bg_2.jpg" class="img-responsive"/>
 
     </div>
 
@@ -60,9 +60,9 @@
         <div id="content">
     <?php if(is_array($cates)): foreach($cates as $key=>$cate): ?><div class="column">
             <div class="column-title clearfix">
-                <span class="col-lg-3 col-md-3 col-sm-3 col-xs-4"><img src="./public/images/decorator/left.png" class="img-responsive"/></span>
+                <span class="col-lg-3 col-md-3 col-sm-3 col-xs-4"><img src="/cafe/Public/images/decorator/left.png" class="img-responsive"/></span>
                 <span class="col-lg-1 col-md-2 col-sm-2 col-xs-3" style="text-align: center"><?php echo ($cate["name"]); ?></span>
-                <span class="col-lg-3 col-md-3 col-sm-3 col-xs-4"><img src="./public/images/decorator/right.png" class="img-responsive"/></span>
+                <span class="col-lg-3 col-md-3 col-sm-3 col-xs-4"><img src="/cafe/Public/images/decorator/right.png" class="img-responsive"/></span>
             </div>
             <div class="row" style="padding: 0 20px">
                 <?php echo W('Common/Item/showItems',array($cate['id']));?>

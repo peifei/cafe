@@ -10,11 +10,12 @@ return array(
     'LAYOUT_ON'             =>  true, // 是否启用布局
     'LAYOUT_NAME'           =>  'layout', // 当前布局名称 默认为layout
     //debug
-    'SHOW_PAGE_TRACE'       =>true,
+    'SHOW_PAGE_TRACE'       =>  true,
     //template pares string
     'TMPL_PARSE_STRING'     =>  array(
         '__SITE_BASE_URL__' =>  SITE_BASE_URL
     ),
     //default filter
     'DEFAULT_FILTER'        =>  'trim,htmlspecialchars',
+    'URL_MODEL'             =>  '2'
 );

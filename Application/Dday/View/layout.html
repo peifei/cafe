@@ -1,4 +1,8 @@
+<?php if(session('?loginAuthor')){ ?>
+<include file="./Application/Dday/View/header_login.html" />
+<?php }else{ ?>
 <include file="./Application/Dday/View/header.html" />
-{:W('Common/Common/showNoticeMessage',array('success','this is message'))}
+<?php } ?>
+<!--{:W('Common/Common/showNoticeMessage',array('success','this is message'))}-->
 {__CONTENT__}
 <include file="./Application/Dday/View/footer.html" />
