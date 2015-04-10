@@ -108,3 +108,26 @@ body {
     font-size: 14px; !important;
     font-weight: 700;!important;
 }
+
+#item_list .row{
+    padding: 15px;
+    border-bottom: solid 1px #dddddd;
+}
+
+#item_list .textp{
+    padding: 20px 0 0 30px;
+}
+
+#item_list .btnp{
+    padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #item_list .btnp{
+        padding-top: 0px;
+    }
+}
+
+#item_list .btnp span{
+    margin: 5px 0;
+}

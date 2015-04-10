@@ -77,14 +77,12 @@ class ItemController extends Controller {
 
             $data['desc'] = $data['editorValue'];
             unset($data['editorValue']);
-            var_dump($data);
             $item = new ItemModel();
             $item->editItem($data);
             $this->success('添加新产品成功',SITE_BASE_URL.'dday/item',0);
         }else{
             $res=$item->where(array('id'=>$id))->find();
             $this->assign('item',$res);
-            var_dump($res);
             $this->display();
         }
 

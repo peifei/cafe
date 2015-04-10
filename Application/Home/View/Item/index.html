@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+        <div class="page-header"></div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img class="img-responsive img-thumbnail" src="__SITE_BASE_URL__public/{$item.pic}" alt="" />
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="item_desc">
+                <h3>{$item.name }</h3>
+                <p>价格:{$item.price}</p>
+                <div class="desc_text">
+                    <?php echo htmlspecialchars_decode($item['desc']) ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+</div>

@@ -50,9 +50,10 @@ class ItemWidget extends Controller {
         $items=$itemDb->getItemsByCatIdAndStatus($cid,ItemModel::STATUS_MAINPAGE_SHOW);
         $html='';
         foreach($items as $item){
-            $html.='<div class="col-md-3 col-sm-6 col-xs-12">
-                <a class="imglink" href="#">
+            $html.='<div class="col-md-3 col-sm-6 col-xs-12 item">
+                <a class="imglink" href="'.SITE_BASE_URL.'home/item?id='.$item['id'].'">
                     <img src="'.SITE_BASE_URL.'public/'.$item['pic'].'" class="img-thumbnail img-responsive"/>
+                <p>'.$item['name'].'<span class="badge pull-right">'.$item['price'].'</span></p>
                 </a>
             </div>';
         }

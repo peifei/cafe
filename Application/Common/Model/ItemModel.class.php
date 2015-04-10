@@ -44,4 +44,9 @@ class ItemModel extends Model  {
             return $this->where(array('cid'=>$catId,'status'=>$status))->select();
         }
     }
+
+    public function getItemById($id){
+        $res=$this->where(array('id'=>$id))->find();
+        return $res;
+    }
 }

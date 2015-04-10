@@ -1,6 +1,7 @@
 /*--general--*/
 body{
     background: url("../images/decorator/body_bg.jpg") repeat;
+    font-family: Microsoft YaHei;
 }
 
 #content,#footer{
@@ -89,4 +90,26 @@ body{
 
 #xytn .navbar-nav li.active a{
     color:#843534;
+}
+
+.item a p{
+    margin: 5px;
+    color: #843534;
+    font-weight: bold;
+}
+
+.item a p .badge{
+    background: #843534;
+}
+
+.item a:hover{
+    text-decoration: none;
+}
+
+.item_desc{
+    margin-left: 30px;
+}
+
+.desc_text{
+    overflow: hidden;
 }

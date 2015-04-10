@@ -57,16 +57,25 @@
 
 
     <div id="content">
-        <?php if(is_array($cates)): foreach($cates as $key=>$cate): ?><div class="column">
-        <div class="column-title clearfix">
-            <span class="col-lg-3 col-md-3 col-sm-3 col-xs-4"><img src="/cafe/Public/images/decorator/left.png" class="img-responsive"/></span>
-            <span class="col-lg-1 col-md-2 col-sm-2 col-xs-3" style="text-align: center"><?php echo ($cate["name"]); ?></span>
-            <span class="col-lg-3 col-md-3 col-sm-3 col-xs-4"><img src="/cafe/Public/images/decorator/right.png" class="img-responsive"/></span>
+        <div class="row">
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+        <div class="page-header"></div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img class="img-responsive img-thumbnail" src="http://127.0.0.1/cafe/public/<?php echo ($item["pic"]); ?>" alt="" />
         </div>
-        <div class="row" style="padding: 0 20px">
-            <?php echo W('Common/Item/showItems',array($cate['id']));?>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="item_desc">
+                <h3><?php echo ($item["name"]); ?></h3>
+                <p>价格:<?php echo ($item["price"]); ?></p>
+                <div class="desc_text">
+                    <?php echo htmlspecialchars_decode($item['desc']) ?>
+                </div>
+            </div>
         </div>
-    </div><?php endforeach; endif; ?>
+    </div>
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+</div>
 
     </div>
 <div id="footer">

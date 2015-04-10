@@ -90,29 +90,33 @@
 <?php } ?>
 <!--<?php echo W('Common/Common/showNoticeMessage',array('success','this is message'));?>-->
 <h3 class="page-header">产品列表<span class="pull-right"><a href="http://127.0.0.1/cafe/dday/item/add" class="btn btn-primary btn-sm">添加新产品</a> </span></h3>
-<table class="table table-responsive table-striped">
-    <tr>
-        <th>编号</th>
-        <th>名称</th>
-        <th>价格</th>
-        <th>所属分类</th>
-        <th>状态</th>
-        <th>图片</th>
-        <th>操作</th>
-    </tr>
-    <?php if(is_array($itemList)): foreach($itemList as $key=>$item): ?><tr>
-            <th><?php echo ($item["id"]); ?></th>
-            <th><?php echo ($item["name"]); ?></th>
-            <th><?php echo ($item["price"]); ?></th>
-            <th><?php echo W('Common/Cate/cateNameConverter',array($item['cid']));?></th>
-            <th><?php echo W('Common/Item/statusConverter',array($item['status']));?></th>
-            <th><img src="http://127.0.0.1/cafe//Public/<?php echo ($item["pic"]); ?>" /></th>
-            <th><a href="http://127.0.0.1/cafe/dday/item/delete?id=<?php echo ($item["id"]); ?>" class="btn btn-primary btn-xs">删除</a>&nbsp;&nbsp;
-                <a href="http://127.0.0.1/cafe/dday/item/edit?id=<?php echo ($item["id"]); ?>" class="btn btn-primary btn-xs">修改</a>&nbsp;&nbsp;
-                <a href="http://127.0.0.1/cafe/dday/item/edit?id=<?php echo ($item["id"]); ?>" class="btn btn-primary btn-xs">查看页面</a>
-            </th>
-        </tr><?php endforeach; endif; ?>
-</table>
+
+<div id="item_list">
+<?php if(is_array($itemList)): foreach($itemList as $key=>$item): ?><div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 picp">
+            <img src="http://127.0.0.1/cafe//Public/<?php echo ($item["pic"]); ?>" class="img-responsive img-thumbnail" />
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 textp">
+            <p><b>产品id：</b><?php echo ($item["id"]); ?></p>
+            <p><b>产品名称：</b><?php echo ($item["name"]); ?></p>
+            <p><b>产品价格：</b><?php echo ($item["price"]); ?></p>
+            <p><b>所属分类：</b><?php echo W('Common/Cate/cateNameConverter',array($item['cid']));?></p>
+            <p><b>产品状态：</b><?php echo W('Common/Item/statusConverter',array($item['status']));?></p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 btnp">
+            <span class="col-lg-12 col-md-12 col-sm-12 col-xs-2">
+                <a href="http://127.0.0.1/cafe/dday/item/delete?id=<?php echo ($item["id"]); ?>" class="btn btn-primary btn-sm">删除</a>
+            </span>
+            <span class="col-lg-12 col-md-12 col-sm-12 col-xs-2">
+                <a href="http://127.0.0.1/cafe/dday/item/edit?id=<?php echo ($item["id"]); ?>" class="btn btn-primary btn-sm">修改</a>&nbsp;&nbsp;
+            </span>
+            <span class="col-lg-12 col-md-12 col-sm-12 col-xs-2">
+                <a href="http://127.0.0.1/cafe/home/item?id=<?php echo ($item["id"]); ?>" class="btn btn-primary btn-sm" target="_blank">查看页面</a>
+            </span>
+        </div>
+    </div><?php endforeach; endif; ?>
+
+</div>
         </div><!--container-->
     </body>
 </html>
